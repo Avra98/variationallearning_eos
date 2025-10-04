@@ -1,0 +1,281 @@
+# ==============================================
+# REPRODUCIBLE RESEARCH REPOSITORY .gitignore
+# ==============================================
+
+# ==============================================
+# PYTHON
+# ==============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ==============================================
+# JUPYTER NOTEBOOKS
+# ==============================================
+.ipynb_checkpoints/
+*.ipynb
+
+# ==============================================
+# MACHINE LEARNING / DEEP LEARNING
+# ==============================================
+# Model checkpoints and weights
+*.pth
+*.pt
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.ckpt
+*.safetensors
+
+# TensorBoard logs
+runs/
+logs/
+tensorboard_logs/
+
+# Weights & Biases
+wandb/
+
+# MLflow
+mlruns/
+
+# ==============================================
+# DATA AND DATASETS
+# ==============================================
+# Raw datasets (usually too large for git)
+data/
+datasets/
+DATASETS/
+DTASETS/
+
+# Processed data
+processed_data/
+preprocessed/
+*.csv
+*.tsv
+*.json
+*.jsonl
+*.parquet
+*.feather
+
+# ==============================================
+# EXPERIMENT RESULTS AND OUTPUTS
+# ==============================================
+# Training logs and outputs
+training_logs/
+training_logs1/
+precon_log_files/
+regression_results/
+RESULTS/
+
+# Generated figures (keep only final paper figures)
+figures/
+final_figures/
+paper_figures/
+arxiv_figures/
+plot_scripts/
+old_figures/
+
+# Temporary experiment outputs
+output/
+outputs/
+experiments/
+exp_results/
+
+# ==============================================
+# SYSTEM FILES
+# ==============================================
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# ==============================================
+# RESEARCH SPECIFIC
+# ==============================================
+# Large model outputs and analysis
+ivon_actual/
+ivon_actual_cifarwhole/
+ivon_sharp/
+ivon_sharp_correct*/
+ivon_student/
+ivon_resnet20/
+ivon_resnet20_alphas/
+
+# Network analysis outputs
+network_stability/
+network_stability_analysis_outputs/
+
+# Descent analysis outputs
+descent_figures/
+
+# Temporary scripts (keep only essential ones)
+# Commented out - you may want to keep some of these
+# bash_plt.sh
+# basic_plt.py
+# holder_table.py
+# ivon.sh
+# logistic_regression_highdim.py
+# logistic_regression.py
+# plt_ivon_mse.py
+# plt_ivon.py
+# plt_second.py
+# quad_stable.sh
+# range_ivon_stability.py
+# quadratic.py
+# t_student.py
+# welford.py
+
+# ==============================================
+# COMPILED AND BINARY FILES
+# ==============================================
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.obj
+*.a
+*.lib
+
+# ==============================================
+# ARCHIVES
+# ==============================================
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+Python-3.8.10/
+Python-3.8.10.tgz
+
+# ==============================================
+# DOCUMENTATION BUILDS
+# ==============================================
+docs/_build/
+site/
+
+# ==============================================
+# CONFIGURATION FILES (if they contain sensitive data)
+# ==============================================
+# config.json
+# secrets.yaml
+# .env.local
+
+# ==============================================
+# KEEP THESE FILES (comment them out if you want to ignore them)
+# ==============================================
+# Essential scripts for reproducibility
+# *.py
+# *.sh
+# README.md
+# requirements.txt
+# environment.yml
+# setup.py
+
+# ==============================================
+# CUSTOM IGNORES - IGNORE EVERYTHING EXCEPT src/, requirements.txt, README.md
+# ==============================================
+
+# Ignore all root level files and folders except essential ones
+*
+!src/
+!requirements.txt
+!README.md
+!.gitignore
+
+# Specifically ignore these folders and files
+training_logs/
+training_logs1/
+precon_log_files/
+regression_results/
+RESULTS/
+figures/
+final_figures/
+paper_figures/
+arxiv_figures/
+plot_scripts/
+old_figures/
+output/
+outputs/
+experiments/
+exp_results/
+data/
+datasets/
+DATASETS/
+DTASETS/
+ivon_actual/
+ivon_actual_cifarwhole/
+ivon_sharp/
+ivon_sharp_correct*/
+ivon_student/
+ivon_resnet20/
+ivon_resnet20_alphas/
+network_stability/
+network_stability_analysis_outputs/
+descent_figures/
+vit/
+DATASETS/
+Python-3.8.10/
+Python-3.8.10.tgz
+iclr_arxiv/
+
+# Ignore all individual files in root
+*.png
+*.pth
+*.py
+*.sh
+*.txt
+*.md
+!requirements.txt
+!README.md
+
+# Keep src/ folder and its contents (but exclude __pycache__)
+!src/**
+!src/__pycache__/
+src/__pycache__/
+
+# Keep ivon/ folder and its contents
+!ivon/
