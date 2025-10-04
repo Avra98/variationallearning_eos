@@ -279,3 +279,6 @@ src/__pycache__/
 
 # Keep ivon/ folder and its contents
 !ivon/
+!ivon/__init__.py
+!ivon/_ivon.py
+!ivon/quad.py
