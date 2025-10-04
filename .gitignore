@@ -282,3 +282,8 @@ src/__pycache__/
 !ivon/__init__.py
 !ivon/_ivon.py
 !ivon/quad.py
+
+# Keep specific files and folders
+!descent_check_z_linear.py
+!RESULTS/
+!DATASETS/
